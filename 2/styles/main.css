@@ -1,0 +1,143 @@
+body{
+    background: #b5d6f2;
+}
+
+.wrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    width: 600px;
+}
+
+#title{
+    font-size: 30px;
+    margin: 5px;
+    color: blue;
+}
+
+.text{
+    width: 90%;
+    text-align: center;
+    color: darkblue;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+#test{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.variant>label{
+    color: purple;
+    font-size: 16px;
+    margin-left: 5px;
+}
+
+.variant{
+    width: 100%;
+    padding-left: 50px;
+}
+
+.block{
+    border: 1px solid #2196F3;
+    border-radius: 10px;
+    width: 600px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 5px;
+}
+
+.block:hover{
+    background: white;
+}
+
+hr{
+    width: 90%;
+    border: 0.5px solid blue;
+}
+
+#apply, #repeat{
+    margin: 10px 0px;
+    width: 300px;
+    height: 40px;
+    border: 1px solid blue;
+    border-radius: 10px;
+    background: limegreen;
+    color: white;
+    font-size: 22px;
+}
+
+#repeat{
+    display: none;
+}
+
+#apply:hover,.closer:hover, #repeat:hover{
+    cursor: pointer;
+    background: green;
+}
+
+#darktheme{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    display: none;
+    background: #3339;
+}
+
+#error, #success{
+    position: fixed;
+    margin: auto;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: 300px;
+    height: 150px;
+    z-index: 2;
+    background: white;
+    border: 2px solid blue;
+    border-radius: 10px;
+    display: none;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    box-shadow: 0px 0px 15px 1px blue;
+}
+
+#error>p,#success>p{
+    color: blue;
+    font-weight: bold;
+}
+
+.closer{
+    border: 1px solid blue;
+    border-radius: 5px;
+    width: 150px;
+    height: 30px;
+    background: limegreen;
+    font-size: 20px;
+    color: white;
+    outline: none;
+}
+
+.radioButton{
+    outline: none;
+}
+
+.radioButton:hover + label, .radioButton:hover{
+    cursor: pointer;
+}
+
+
+.radioButton:checked + label{
+    color: darkblue;
+}

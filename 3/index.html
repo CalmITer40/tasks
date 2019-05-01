@@ -1,0 +1,41 @@
+<html>
+        <head>
+            <meta charset='UTF-8'>
+            <title>Гонки</title>
+            <link rel='stylesheet' href='styles/reset.css' type='text/css'>
+            <link rel='stylesheet' href='styles/main.css?ver=2' type='text/css'>
+            <link rel='stylesheet' href='styles/mobile.css?ver=1' media='screen' type='text/css'>
+            <script src='scripts/jquery-3.3.1.min.js'></script>
+            <script src='scripts/main.js'></script>
+            <meta name="viewport" content="width=device-width, initial-scale=1">
+        </head>
+
+        <body>
+            <div class='wrapper'>
+                <div id="title">ГОНКИ</div>
+                <div id="speed">
+                    <button class='speedCh' onclick='changeSpeed(1,this)'>1x</button>
+                    <button class='speedCh' onclick='changeSpeed(2,this)'>10x</button>
+                    <button class='speedCh' onclick='changeSpeed(3,this)'>100x</button>
+                </div>
+                <div id="canvas">
+                    <canvas id='graphics' width="1200" height="0">
+                    </canvas>
+                    <div id="loading">
+                        <img src="assets/load.gif" width="300" height="200">
+                    </div>
+                    <div id="darktheme"></div>
+                    <div id="result">
+                        <table id='resTable'>
+                            <tr>
+                                <th class='position'>Позиция</th>
+                                <th class='auto'>Автомобиль</th>
+                                <th class='time'>Время</th>
+                            </tr>
+                        </table>
+                        <button id="closer" onclick="repeat()">Повторить</button>
+                    </div>
+                </div>
+            </div>
+       </body>
+</html>

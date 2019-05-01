@@ -1,0 +1,137 @@
+body{
+    background: #b5d6f2;
+}
+
+.wrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+}
+
+#title{
+    margin-top: 10px;
+    font-size: 30px;
+    margin: 5px;
+    color: blue;
+}
+
+#graphics{
+    background: #b5d6f2;
+}
+
+.position{
+    width: 80px;
+}
+
+.auto{
+    width: 150px;
+}
+
+.time{
+    width: 200px;
+}
+
+th,td{
+    border-bottom: 2px solid blue;
+    padding: 5px;
+    text-align: center;
+    color: darkblue;
+}
+
+th:nth-child(1),th:nth-child(2){
+    border-right: 2px solid blue;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+td:nth-child(1),td:nth-child(2){
+    border-right: 2px solid blue;
+    font-size: 14px;
+}
+
+#result{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 460px;
+    height: 400px;
+    margin: auto;
+    background: white;
+    border: 2px solid blue;
+    border-radius: 10px;
+    box-shadow: 0px 0px 15px 1px blue;
+    display: none;
+    z-index: 1;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#darktheme{
+    height: 100%;
+    width: 100%;
+    z-index: 0;
+    background: #3339;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: none;
+}
+
+#closer{
+    margin-bottom: 15px;
+    border: 1px solid blue;
+    background: limegreen;
+    color: white;
+    width: 150px;
+    height: 30px;
+    border-radius: 10px;
+    outline: none;
+    font-size: 18px;
+}
+
+#closer:hover{
+    background: green;
+    cursor: pointer;
+}
+
+#speed{
+    width: 300px;
+    height: 50px;
+    top: 0;
+    left: 0;
+    display: none;
+    flex-direction: row;
+    margin-top: 10px;
+}
+
+.speedCh{
+    margin: 10px;
+    background: aliceblue;
+    border: 2px solid blue;
+    border-radius: 5px;
+    outline: none;
+    font-size: 20px;
+    width: 100px;
+}
+
+.speedCh:hover{
+    background: limegreen;
+    color: white;
+    cursor: pointer;
+}
+
+#loading{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 400px;
+    height: 200px;
+    margin: auto;
+}

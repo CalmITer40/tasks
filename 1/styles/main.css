@@ -1,0 +1,100 @@
+body{
+    background: #b5d6f2;
+}
+
+.wrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    height: 300px;
+}
+
+#title{
+    margin-top: 10px;
+    font-size: 30px;
+    margin: 5px;
+    color: blue;
+}
+
+#slider{
+    width: 100%;
+    height: 250px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+#prev, #next{
+    width: 5%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#subPrev, #subNext{
+    width: 30%;
+    height: 20%;
+    border: 5px solid blue;
+    padding: 10px;
+    z-index: 1;
+}
+
+#subPrev{
+	margin-left: 10px;
+}
+
+#subNext{
+	margin-right: 10px;
+}
+
+#subPrev:hover, #subNext:hover{
+    cursor: pointer;
+}
+
+#image{
+    position: relative;
+    width: 90%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border: 5px solid blue;
+    border-radius: 20px;
+    padding: 10px;
+    z-index: 0;
+}
+
+h1{
+    position: absolute;
+    top: 200px;
+    text-align: center;
+    color: white;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.slide{
+    display: none;
+    justify-content: center;
+    height: 250px;
+    width: 250px;
+    margin: 0px 10px;
+}
+
+@keyframes appearance{
+    0%{
+        opacity: 0;
+    }
+    50%{
+        opacity: 0.7;
+    }
+    100%{
+        opacity: 1;
+    }
+}
